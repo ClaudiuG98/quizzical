@@ -1,7 +1,11 @@
-function App() {
+import React from "react"
+import IntroPage from "./components/IntroPage"
+
+export default function App() {
+
   return (
-    <h1>test</h1>
+    <div className="app">
+      <IntroPage />
+    </div>
   )
 }
-
-export default App
