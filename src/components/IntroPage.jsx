@@ -7,7 +7,7 @@ export default function IntroPage(props) {
             <div className="intro-page">
                 <h1>Quizzical</h1>
                 <p>Show us how smart you are</p>
-                <button className="start-quiz-button">Start Quiz</button>
+                <button onClick={props.handleClick} className="start-quiz-button">Start Quiz</button>
             </div>
             <img src="./src/assets/shape-2.png" className="shape-bottom"/>
         </div>

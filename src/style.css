@@ -13,6 +13,20 @@ body {
     font-style: normal;
 }
 
+.shape-top {
+	position: absolute;
+	right: 0;
+	width: 20vw;
+	z-index: -1;
+}
+
+.shape-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 18vw;
+	z-index: -1;
+}
+
 .intro-page {
     position: absolute;
 	top: 50%;
@@ -60,16 +74,7 @@ body {
     color: #293264;
 }
 
-.shape-top {
-	position: absolute;
-	right: 0;
-	width: 20vw;
-	z-index: -1;
-}
-
-.shape-bottom {
-	position: absolute;
-	bottom: 0;
-	width: 18vw;
-	z-index: -1;
+.btn {
+    background: #D6DBF5;
+    border-radius: 7.94239px;
 }
