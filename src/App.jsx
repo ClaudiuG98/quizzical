@@ -11,7 +11,7 @@ export default function App() {
 
   return (
     <div className="app">
-      {gameStart ? <QuestionList setGameStart={setGameStart}/> : <IntroPage handleClick={handleClick}/>}
+      {gameStart ? <QuestionList gameStart={gameStart} handleClick={handleClick}/> : <IntroPage handleClick={handleClick}/>}
     </div>
   );
 }

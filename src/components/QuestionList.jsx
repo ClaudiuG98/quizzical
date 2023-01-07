@@ -19,10 +19,7 @@ export default function QuestionList(props) {
         })
         setQuestions(q)
       });
-  }, []);
-
-  console.log(questions);
-  console.log(correct);
+  }, [props.gameStart]);
 
   const questionElements = questions.map((question) => {
     return (
@@ -67,12 +64,16 @@ export default function QuestionList(props) {
   }
 
   function handlePlayAgain() {
-
+    setQuestions([])
+    setChecked(false)
+    setCorrect(0)
+    props.handleClick();
   }
 
   return (
     <div>
       {questionElements}
+      {checked && <p>You scored {correct}/{questions.length} correct answers </p>}
       <button onClick={checked ? handlePlayAgain : handleCheckAnswers}>{checked ? "Play Again" : "Check answers"}</button>
     </div>
   );
