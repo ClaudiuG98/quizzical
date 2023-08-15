@@ -13,7 +13,7 @@ export default function App() {
     <div>
       <img src="./src/assets/shape-1.png" className="shape-top" />
       <div className="app">
-        {gameStart ? (
+        {gameStart ? z(
           <QuestionList gameStart={gameStart} handleClick={handleClick} />
         ) : (
           <IntroPage handleClick={handleClick} />
